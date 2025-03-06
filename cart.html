@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart - Ergoman</title>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+      <!-- ... (navigation content same as index.html) ... -->
+    </nav>
+
+    <main class="pt-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-3xl font-bold mb-8">Shopping Cart</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Cart Items -->
+          <div class="md:col-span-2">
+            <div class="bg-white rounded-lg shadow-md p-6 mb-4">
+              <!-- Cart Item 1 -->
+              <div class="flex items-center border-b py-4">
+                <img src="/vite.svg" alt="Product" class="w-24 h-24 object-cover rounded-lg"/>
+                <div class="flex-1 ml-4">
+                  <h3 class="text-lg font-semibold">Ergonomic Mouse Pro</h3>
+                  <p class="text-gray-600">Black</p>
+                  <div class="flex items-center mt-2">
+                    <button class="text-gray-500 hover:text-primary">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex items-center border rounded-md">
+                    <button class="px-3 py-1 text-gray-600 hover:text-primary">-</button>
+                    <input type="number" value="1" class="w-16 text-center border-0 focus:ring-0"/>
+                    <button class="px-3 py-1 text-gray-600 hover:text-primary">+</button>
+                  </div>
+                  <span class="ml-4 text-lg font-semibold">$79.99</span>
+                </div>
+              </div>
+
+              <!-- Cart Item 2 -->
+              <div class="flex items-center py-4">
+                <img src="/vite.svg" alt="Product" class="w-24 h-24 object-cover rounded-lg"/>
+                <div class="flex-1 ml-4">
+                  <h3 class="text-lg font-semibold">Ergonomic Keyboard</h3>
+                  <p class="text-gray-600">White</p>
+                  <div class="flex items-center mt-2">
+                    <button class="text-gray-500 hover:text-primary">
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="flex items-center">
+                  <div class="flex items-center border rounded-md">
+                    <button class="px-3 py-1 text-gray-600 hover:text-primary">-</button>
+                    <input type="number" value="1" class="w-16 text-center border-0 focus:ring-0"/>
+                    <button class="px-3 py-1 text-gray-600 hover:text-primary">+</button>
+                  </div>
+                  <span class="ml-4 text-lg font-semibold">$129.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Order Summary -->
+          <div class="md:col-span-1">
+            <div class="bg-white rounded-lg shadow-md p-6">
+              <h2 class="text-lg font-semibold mb-4">Order Summary</h2>
+              <div class="space-y-3">
+                <div class="flex justify-between">
+                  <span class="text-gray-600">Subtotal</span>
+                  <span>$209.98</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-600">Shipping</span>
+                  <span>Free</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-600">Tax</span>
+                  <span>$16.80</span>
+                </div>
+                <div class="border-t pt-3">
+                  <div class="flex justify-between font-semibold">
+                    <span>Total</span>
+                    <span>$226.78</span>
+                  </div>
+                </div>
+              </div>
+              <button class="w-full bg-primary text-white py-3 rounded-md hover:bg-blue-700 mt-6">Proceed to Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-800 text-white py-8">
+      <!-- ... (footer content same as index.html) ... -->
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
