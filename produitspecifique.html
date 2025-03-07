@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produit Spécifique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-200 py-4 px-8 flex flex-col md:flex-row justify-between items-center shadow-md">
+        <div class="flex items-center mb-4 md:mb-0">
+            <img src="/images/logo.png" alt="Logo" class="h-10">
+            <span class="text-2xl font-bold text-blue-800 ml-2">ergoman</span>
+        </div>
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-blue-900 font-semibold text-center">
+            <li><a href="index.html" class="hover:text-blue-600">Accueil</a></li>
+            <li><a href="products.html" class="hover:text-blue-600">Produits</a></li>
+            <li><a href="#" class="hover:text-blue-600">Promotions</a></li>
+            <li><a href="#" class="hover:text-blue-600">Réclamation</a></li>
+            <li><a href="cart.html" class="bg-blue-700 text-white px-4 py-2 rounded-md">Panier (3)</a></li>
+        </ul>
+    </nav>
+    <main class="text-center py-10 px-4 md:px-0">
+        <h1 class="text-3xl font-bold text-blue-900 mb-8">Produit spécifique</h1>
+        
+        <div class="flex flex-col md:flex-row justify-center mt-8 space-y-8 md:space-y-0 md:space-x-8">
+            <div class="bg-blue-900 p-4 rounded-lg w-full md:w-80 text-white" style="margin-right: 200px;">
+                <h2 class="text-lg font-bold">Description</h2>
+                <p class="bg-white text-black p-4 rounded mt-2">
+                    Un casque sans fil confortable pour les oreilles, équipé d’une caméra pour prendre des photos et des vidéos.
+                </p>
+            </div>
+            <div class="bg-blue-900 p-4 rounded-lg w-full md:w-80 text-white">
+                <h2 class="text-lg font-bold">Dessiner votre produit</h2>
+                <div class="bg-white p-4 rounded mt-2 flex justify-center">
+                    <img src="/images/headphones-removebg-preview.png" alt="Casque" class="w-32 h-32">
+                </div>
+            </div>
+        </div>
+
+        <!-- Espacement ajouté entre Produit spécifique et les couleurs -->
+        <div class="mt-12 flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-8">
+            <select class="p-2 border rounded-lg bg-[#094390] text-white w-full md:w-auto" >
+                <option>Sélectionnez marque</option>
+            </select>
+
+            <div class="flex flex-col items-center">
+                <span class="font-bold text-lg mb-2">Couleur</span> <!-- Texte "Couleur" en gras -->
+                <div class="flex items-center space-x-4">
+                    <button class="bg-white p-1 shadow rounded-full">
+                        <span class="text-black text-xl">‹</span>
+                    </button>
+                    <div class="flex space-x-2">
+                        <span class="w-6 h-6 bg-red-500 rounded-full cursor-pointer"></span>
+                        <span class="w-6 h-6 bg-orange-500 rounded-full cursor-pointer"></span>
+                        <span class="w-6 h-6 bg-yellow-500 rounded-full cursor-pointer"></span>
+                        <span class="w-6 h-6 bg-green-500 rounded-full cursor-pointer"></span>
+                        <span class="w-6 h-6 bg-blue-500 rounded-full cursor-pointer"></span>
+                        <span class="w-6 h-6 bg-cyan-500 rounded-full cursor-pointer"></span>
+                    </div>
+                    <button class="bg-white p-1 shadow rounded-full">
+                        <span class="text-black text-xl">›</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+            <button class="bg-white text-blue-800 px-6 py-2 rounded-full border border-gray-300 font-bold w-full md:w-auto"><a href="index.html"> Retour</a></button>
+            <button class="bg-blue-900 text-white px-6 py-2 rounded-full font-bold w-full md:w-auto">Valider</button>
+        </div>
+    </main>
+</body>
+</html>

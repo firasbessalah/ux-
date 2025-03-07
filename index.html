@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ErgoMan</title>
+</head>
+<body class="bg-white-100">
+  <nav class="bg-blue-200 py-4 px-8 flex flex-col md:flex-row justify-between items-center shadow-md">
+    <!-- Logo et nom du site -->
+    <div class="flex items-center mb-4 md:mb-0">
+        <img src="/images/logo.png" alt="Logo" class="h-10">
+        <span class="text-2xl font-bold text-blue-800 ml-2">ergoman</span>
+    </div>
+
+    <!-- Liens de navigation -->
+    <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-blue-900 font-semibold text-center">
+        <li><a href="index.html" class="hover:text-blue-600">Accueil</a></li>
+        <li><a href="products.html" class="hover:text-blue-600">Produits</a></li>
+        <li><a href="#" class="hover:text-blue-600">Promotions</a></li>
+        <li><a href="contact.html" class="hover:text-blue-600">Réclamation</a></li>
+        <li><a href="cart.html" class="bg-blue-700 text-white px-4 py-2 rounded-md">Panier (3)</a></li>
+    </ul>
+</nav>
+    <div class="flex justify-between items-center mb-4 mt-4 px-4 md:px-0">
+      <h1 class="text-2xl font-bold text-[#3B62A5] md:ml-48">Bienvenue chez ErgoMan</h1>
+      <div class="space-x-4 md:mr-48">
+          <button class="bg-[#C1AEEC] text-white px-4 py-2 rounded-full"><a href="produitspecifique.html"> Produit spécifique </a></button>
+          <button class="bg-[#C1AEEC] text-white px-4 py-2 rounded-full"><a href="comparaison.html">Comparer produit</a></button>
+      </div>
+  </div>
+  
+    <div class="flex flex-col md:flex-row">
+        <!-- Sidebar -->
+        <aside class="w-full md:w-1/4 bg-white p-4 border-r border-gray-300 md:h-screen md:sticky md:top-0">
+            <h2 class="text-lg font-semibold mb-3">Prix</h2>
+            <div class="flex justify-between items-center">
+                <p>0</p>
+                <input type="range" min="0" max="2990" class="w-full mb-4"><p>2990</p>
+            </div>
+            
+            <h2 class="text-lg font-semibold mb-3">Catégorie</h2>
+            <select class="w-full p-2 border rounded-lg bg-[#B9D2E7]">
+                <option>Sélectionnez catégorie</option>
+            </select>
+            
+            <h2 class="text-lg font-semibold mt-4 mb-3">Marque</h2>
+            <select class="w-full p-2 border rounded-lg bg-[#B9D2E7]">
+                <option>Sélectionnez marque</option>
+            </select>
+            
+            <h2 class="text-lg font-semibold mt-4 mb-3" >Couleur</h2>
+            <div class="relative flex items-center">
+                <!-- Flèche gauche -->
+                <button class="absolute left-0 z-10 bg-white p-2 shadow rounded-full" >
+                    <span class="text-black text-xl">‹</span>
+                </button>
+            
+                <div class="flex space-x-5 overflow-x-auto scrollbar-hide scroll-smooth snap-x snap-mandatory w-full px-8">
+                    <button class="w-6 h-6 bg-red-500 rounded-full snap-center"></button>
+                    <button class="w-6 h-6 bg-orange-500 rounded-full snap-center"></button>
+                    <button class="w-6 h-6 bg-yellow-500 rounded-full snap-center"></button>
+                    <button class="w-6 h-6 bg-green-500 rounded-full snap-center"></button>
+                    <button class="w-6 h-6 bg-blue-500 rounded-full snap-center"></button>
+                   
+                  
+                    <button class="w-6 h-6 bg-purple-500 rounded-full snap-center"></button>
+                    <button class="w-6 h-6 bg-pink-500 rounded-full snap-center"></button>
+                 
+                   
+                   
+                </div>
+            
+                <!-- Flèche droite -->
+                <button class="absolute right-0 z-10 bg-white p-2 shadow rounded-full" margin-right="10px">
+                    <span class="text-black text-xl">›</span>
+                </button>
+            </div>
+            
+        </aside>
+        
+        <!-- Product Section -->
+        <main class="w-full md:w-3/4 p-4">
+          <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+            <img src="./images/annonce1.png" alt="banner" class="w-full md:w-1/3 h-48 object-cover">
+            <img src="./images/annonce2.png" alt="banner" class="w-full md:w-1/3 h-48 object-cover">
+        </div>
+        
+            <hr class="mb-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Sample Product -->
+                <div class="bg-[#C2D4F8] p-6 rounded-2xl shadow-lg max-w-lg mx-auto">
+                  <!-- Titre -->
+                  <h3 class="text-center text-lg font-bold text-[#002A5E]">
+                    <a href="product-details.html" >    Pc de Bureau Gamer <br> AMD RYZEN 3 8G 256G SSD </a>
+                  </h3>
+              
+                  <!-- Contenu principal -->
+                  <div class="flex items-start mt-4">
+                      <!-- Image du produit -->
+                      <div class="flex-shrink-0">
+                          <img src="/images/aff1.png" class="w-40 h-40  rounded-lg" alt="product">
+                      </div>
+              
+                      <!-- Description -->
+                      <div class="ml-4 text-sm text-[#002A5E]">
+                          <p><strong>Processeur:</strong> AMD Ryzen™ 3 3200G</p>
+                          <p><strong>Système d'exploitation:</strong> FreeDos</p>
+                          <p><strong>Mémoire RAM:</strong> 8Go DDR4 3200Mhz</p>
+                          <p><strong>Disque Dur:</strong> 256Go SSD</p>
+                      </div>
+                  </div>
+              
+                  <!-- Prix -->
+                  <p class="text-2xl font-bold text-center mt-4 text-black">749,000 DT</p>
+              
+                  <!-- Boutons -->
+                  <div class="flex items-center justify-between mt-4">
+                      <button class="bg-[#002A5E] text-white px-6 py-2 rounded-lg flex-1">
+                          Ajouter panier
+                      </button>
+                      <div class="flex items-center ml-4">
+                          <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                              <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                          </svg>
+                          <span class="text-xl font-bold text-black ml-2">20</span>
+                      </div>
+                  </div>
+              </div>
+              
+                
+              <div class="bg-[#C2D4F8] p-6 rounded-2xl shadow-lg max-w-lg mx-auto">
+                <!-- Titre -->
+                <h3 class="text-center text-lg font-bold text-[#002A5E]">
+                  <a href="product-details.html" >      Pc de Bureau Gamer  i5 10è Gén 16G <br>MSI GTX 1660 Ti VENTUS XS 6G OC </a>
+                </h3>
+            
+                <!-- Contenu principal -->
+                <div class="flex items-start mt-4">
+                    <!-- Image du produit -->
+                    <div class="flex-shrink-0">
+                        <img src="/images/aff2.png" class="w-40F h-40  rounded-lg" alt="product">
+                    </div>
+            
+                    <!-- Description -->
+                    <div class="ml-4 text-sm text-[#002A5E]">
+                        <p><strong> Processeur:</strong> Intel Core i5-10400F </p>
+                        <p><strong> Système d'exploitation: </strong> FreeDos</p>
+                        <p><strong> Mémoire RAM:</strong> 16Go  DDR4 3200Mhz </p>
+                        <p><strong> Disque Dur : </strong> MSI SSD SPATIUM   500Go</p>
+                    </div>
+                </div>
+            
+                <!-- Prix -->
+                <p class="text-2xl font-bold text-center mt-10 text-black">1 599,000 DT</p>
+            
+                <!-- Boutons -->
+                <div class="flex items-center justify-between mt-4">
+                    <button class="bg-[#002A5E] text-white px-6 py-2 rounded-lg flex-1">
+                        Ajouter panier
+                    </button>
+                    <div class="flex items-center ml-4">
+                        <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg>
+                        <span class="text-xl font-bold text-black ml-2">27</span>
+                    </div>
+                </div>
+            </div>
+            
+                
+            <div class="bg-[#C2D4F8] p-6 rounded-2xl shadow-lg max-w-lg mx-auto">
+              <!-- Titre -->
+              <h3 class="text-center text-lg font-bold text-[#002A5E]">
+              <a href="product-details.html" > Souris Gamer Sans Fil WHITE SHARK <br> LION  EL GM-5012 - Blanc</a>
+              </h3>
+          
+              <!-- Contenu principal -->
+              <div class="flex items-start mt-4">
+                  <!-- Image du produit -->
+                  <div class="flex-shrink-0">
+                      <img src="/images/aff3.png" class="w-25 h-40 object-cover rounded-lg" alt="product">
+                  </div>
+          
+                  <!-- Description -->
+                  <div class="ml-4 text-sm text-[#002A5E]">
+                      <p><strong>Technologie de Connectivité:</strong> Sans Fil (Wifi) </p>
+                      <p><strong>Type de capteur:</strong> Optique(Pixart 3325)</p>
+                      <p><strong>Résolution:</strong> 10000 Dpi </p>
+                      <p><strong>Type de souris Gaming 6D:</strong>6 boutons</p>
+                      <p><strong>Batterie:</strong>500 mAh au lithium</p>
+                  </div>
+              </div>
+          
+              <!-- Prix -->
+              <p class="text-2xl font-bold text-center mt-4 text-black" style="margin-top: 0px;">85,000 DT</p>
+          
+              <!-- Boutons -->
+              <div class="flex items-center justify-between mt-4">
+                  <button class="bg-[#002A5E] text-white px-6 py-2 rounded-lg flex-1">
+                      Ajouter panier
+                  </button>
+                  <div class="flex items-center ml-4">
+                      <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                      </svg>
+                      <span class="text-xl font-bold text-black ml-2">44</span>
+                  </div>
+              </div>
+          </div>
+          <div class="bg-[#C2D4F8] p-6 rounded-2xl shadow-lg max-w-lg mx-auto">
+            <!-- Titre -->
+            <h3 class="text-center text-lg font-bold text-[#002A5E]">
+              <a href="product-details.html" >  Souris Gamer Sans Fil TRUST <br> GXT110 FELOX - Noir</a>
+            </h3>
+        
+            <!-- Contenu principal -->
+            <div class="flex items-start mt-4">
+                <!-- Image du produit -->
+                <div class="flex-shrink-0">
+                    <img src="/images/aff4.png" class="w-30 h-40  rounded-lg" alt="product">
+                </div>
+        
+                <!-- Description -->
+                <div class="ml-4 text-sm text-[#002A5E]">
+                    <p><strong>Technologie de connectivité:</strong> Sans Fil</p>
+                    <p><strong>Résolution:</strong>  4800 DPI </p>
+                    <p><strong>Nombre de boutons:</strong> 6 + Molette</p>
+                    <p><strong>Autonomie Batterie:</strong> 80 heures</p>
+                    <p><strong>Batterie Rechargeable </strong> </p>
+                </div>
+            </div>
+        
+            <!-- Prix -->
+            <p class="text-2xl font-bold text-center mt-4 text-black" style="margin-top: 40px;">29,000 DT</p>
+        
+            <!-- Boutons -->
+            <div class="flex items-center justify-between mt-4">
+                <button class="bg-[#002A5E] text-white px-6 py-2 rounded-lg flex-1">
+                    Ajouter panier
+                </button>
+                <div class="flex items-center ml-4">
+                    <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                    <span class="text-xl font-bold text-black ml-2">37</span>
+                </div>
+            </div>
+        </div>
+        
+          
+        <div class="bg-[#C2D4F8] p-6 rounded-2xl shadow-lg max-w-lg mx-auto">
+          <!-- Titre -->
+          <h3 class="text-center text-lg font-bold text-[#002A5E]">
+            <a href="product-details.html" >  Chaise De Bureau Sécretaria SOTUFAB <br> En Simili Cuir Sans Accoudoirs - Noir </a>
+          </h3>
+      
+          <!-- Contenu principal -->
+          <div class="flex items-start mt-4">
+              <!-- Image du produit -->
+              <div class="flex-shrink-0">
+                  <img src="/images/aff5.png" class="w-25 h-40  rounded-lg" alt="product">
+              </div>
+      
+              <!-- Description -->
+              <div class="ml-4 text-sm text-[#002A5E]">
+                  <p><strong>Matiére:</strong> Simili Cuir</p>
+                  <p><strong>Pivot sur 360 degrés </strong> </p>
+                  <p><strong>Réglage de la hauteur du siège</strong> </p>
+                  <p><strong>La conception simplifiée est parfaite</strong> </p>
+                  <p><strong>Conçu pour un maximum de confort et de durabilité </strong> </p>
+              </div>
+          </div>
+      
+          <!-- Prix -->
+          <p class="text-2xl font-bold text-center mt-4 text-black">399,000 DT</p>
+      
+          <!-- Boutons -->
+          <div class="flex items-center justify-between mt-4">
+              <button class="bg-[#002A5E] text-white px-6 py-2 rounded-lg flex-1">
+                  Ajouter panier
+              </button>
+              <div class="flex items-center ml-4">
+                  <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  </svg>
+                  <span class="text-xl font-bold text-black ml-2">15</span>
+              </div>
+          </div>
+      </div>
+      
+          
+      <div class="bg-[#C2D4F8] p-6 rounded-2xl shadow-lg max-w-lg mx-auto">
+        <!-- Titre -->
+        <h3 class="text-center text-lg font-bold text-[#002A5E]">
+          <a href="product-details.html" >  Chaise De Bureau Sécretaria SOTUFAB En Simili <br>  Cuir Sans Accoudoirs - Rouge </a>
+        </h3>
+    
+        <!-- Contenu principal -->
+        <div class="flex items-start mt-4">
+            <!-- Image du produit -->
+            <div class="flex-shrink-0">
+                <img src="/images/aff6.png" class="w-25 h-40  rounded-lg" alt="product">
+            </div>
+    
+            <!-- Description -->
+            <div class="ml-4 text-sm text-[#002A5E]">
+                <p><strong>Matiére:</strong> Simili Cuir</p>
+                <p><strong>Pivot sur 360 degrés </strong> </p>
+                <p><strong>Réglage de la hauteur du siège</strong> </p>
+                <p><strong>La conception simplifiée est parfaite</strong> </p>
+                <p><strong>Conçu pour un maximum de confort et de durabilité </strong> </p>
+            </div>
+        </div>
+    
+        <!-- Prix -->
+        <p class="text-2xl font-bold text-center mt-4 text-black">459,000 DT</p>
+    
+        <!-- Boutons -->
+        <div class="flex items-center justify-between mt-4">
+            <button class="bg-[#002A5E] text-white px-6 py-2 rounded-lg flex-1">
+                Ajouter panier
+            </button>
+            <div class="flex items-center ml-4">
+                <svg class="w-8 h-8 text-red-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+                <span class="text-xl font-bold text-black ml-2">22</span>
+            </div>
+        </div>
+    </div>
+            
+        </main>
+    </div>
+</body>
+</html>

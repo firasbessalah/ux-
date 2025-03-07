@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Ergoman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-blue-200 py-4 px-8 flex flex-col md:flex-row justify-between items-center shadow-md">
+      <!-- Logo et nom du site -->
+      <div class="flex items-center mb-4 md:mb-0">
+          <img src="/images/logo.png" alt="Logo" class="h-10">
+          <span class="text-2xl font-bold text-blue-800 ml-2">ergoman</span>
+      </div>
+  
+      <!-- Liens de navigation -->
+      <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-blue-900 font-semibold text-center">
+          <li><a href="index.html" class="hover:text-blue-600">Accueil</a></li>
+          <li><a href="products.html" class="hover:text-blue-600">Produits</a></li>
+          <li><a href="#" class="hover:text-blue-600">Promotions</a></li>
+          <li><a href="contact.html" class="hover:text-blue-600">Réclamation</a></li>
+          <li><a href="cart.html" class="bg-blue-700 text-white px-4 py-2 rounded-md">Panier (3)</a></li>
+      </ul>
+  </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+      <h1 class="text-4xl font-bold text-blue-900 mb-8">Souris Ergonomique</h1>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Color Selection -->
+        <div class="flex flex-col items-center">
+          <h2 class="text-2xl font-bold text-blue-900 mb-4">Couleur</h2>
+          <div class="flex flex-col-reverse space-y-reverse space-y-2">
+            <button class="w-8 h-8 rounded-full bg-white border-2 border-blue-900"></button>
+            <button class="w-8 h-8 rounded-full bg-gray-200"></button>
+            <button class="w-8 h-8 rounded-full bg-gray-300"></button>
+            <button class="w-8 h-8 rounded-full bg-gray-400"></button>
+            <button class="w-8 h-8 rounded-full bg-gray-500"></button>
+            <button class="w-8 h-8 rounded-full bg-gray-600"></button>
+            <button class="w-8 h-8 rounded-full bg-gray-700"></button>
+          </div>
+        </div>
+
+        <!-- Product Images -->
+        <div class="space-y-4">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <img src="/images/mouse.png" alt="G305 Mouse" class="w-full">
+          </div>
+          <div class="grid grid-cols-3 gap-4">
+            <img src="/images/IMAGE6.png" alt="Mouse view 1" class="bg-blue-900 p-2 rounded-lg">
+            <img src="/images/IMAGE5.png" alt="Mouse view 2" class="bg-blue-900 p-2 rounded-lg">
+            <img src="/images/IMAGE7.png" alt="Mouse view 3" class="bg-blue-900 p-2 rounded-lg">
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="space-y-6">
+          <div class="bg-blue-900 text-white p-6 rounded-lg">
+            <h2 class="text-2xl font-bold mb-4">Description</h2>
+            <p class="text-sm">
+              La G305 est une souris de jeu sans fil LIGHTSPEED conçue pour des performances sérieuses avec les dernières innovations technologiques à un prix abordable.
+            </p>
+            <p class="text-sm mt-2">
+              C'est le jeu sans fil de nouvelle génération, maintenant prêt pour tous les joueurs.
+            </p>
+          </div>
+
+          <div class="bg-blue-100 p-6 rounded-lg">
+            <h2 class="text-xl font-bold mb-4">Disponibilité</h2>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <span>Tunis Ariana</span>
+                <span class="ml-auto">✓</span>
+              </li>
+              <li class="flex items-center">
+                <span>Mourouj</span>
+                <span class="ml-auto">✓</span>
+              </li>
+              <li class="flex items-center">
+                <span>Ghazela</span>
+                <span class="ml-auto">✓</span>
+              </li>
+              <li class="flex items-center">
+                <span>Tunis Express</span>
+                <span class="ml-auto">✗</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-4 mt-8">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <p>Ariana, 4 Rues des Jasmins</p>
+        <p class="text-gray-600">©ERGOMAN</p>
+        <button class="bg-blue-900 text-white px-4 py-2 rounded-md">
+          Contact Us
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
