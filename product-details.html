@@ -1,115 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Details - Ergoman</title>
-  </head>
-  <body class="bg-gray-50">
-    <!-- Navigation (same as index.html) -->
-    <nav class="bg-white shadow-md fixed w-full z-50">
-      <!-- ... (navigation content same as index.html) ... -->
-    </nav>
+    <title>Contact Us - Ergoman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-200 py-4 px-8 flex flex-col md:flex-row justify-between items-center shadow-md">
+      <div class="flex items-center mb-4 md:mb-0">
+          <img src="/images/logo.png" alt="Logo" class="h-10">
+          <span class="text-2xl font-bold text-blue-800 ml-2">ergoman</span>
+      </div>
+  
+      <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-blue-900 font-semibold text-center">
+          <li><a href="index.html" class="hover:text-blue-600">Accueil</a></li>
+          <li><a href="products.html" class="hover:text-blue-600">Produits</a></li>
+          <li><a href="#" class="hover:text-blue-600">Promotions</a></li>
+          <li><a href="contact.html" class="hover:text-blue-600">Réclamation</a></li>
+          <li><a href="cart.html" class="bg-blue-700 text-white px-4 py-2 rounded-md">Panier (3)</a></li>
+      </ul>
+  </nav>
 
-    <main class="pt-24">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-white rounded-lg shadow-md p-8">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Product Images -->
-            <div>
-              <div class="mb-4">
-                <img src="/vite.svg" alt="Product" class="w-full h-96 object-cover rounded-lg"/>
-              </div>
-              <div class="grid grid-cols-4 gap-4">
-                <button class="border-2 border-primary rounded-lg p-2">
-                  <img src="/vite.svg" alt="Thumbnail" class="w-full h-20 object-cover"/>
-                </button>
-                <button class="border-2 border-gray-200 rounded-lg p-2">
-                  <img src="/vite.svg" alt="Thumbnail" class="w-full h-20 object-cover"/>
-                </button>
-                <button class="border-2 border-gray-200 rounded-lg p-2">
-                  <img src="/vite.svg" alt="Thumbnail" class="w-full h-20 object-cover"/>
-                </button>
-                <button class="border-2 border-gray-200 rounded-lg p-2">
-                  <img src="/vite.svg" alt="Thumbnail" class="w-full h-20 object-cover"/>
-                </button>
-              </div>
-            </div>
 
-            <!-- Product Info -->
-            <div>
-              <h1 class="text-3xl font-bold mb-4">Ergonomic Mouse Pro</h1>
-              <div class="flex items-center mb-4">
-                <div class="flex text-yellow-400">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                  </svg>
-                  <!-- Repeat star SVG 4 more times -->
-                </div>
-                <span class="ml-2 text-gray-600">(45 reviews)</span>
-              </div>
-              <p class="text-2xl font-bold text-primary mb-4">$79.99</p>
-              <p class="text-gray-600 mb-6">Experience ultimate comfort with our advanced ergonomic mouse, designed for prolonged use with premium features for professionals.</p>
-              
-              <!-- Color Selection -->
-              <div class="mb-6">
-                <h3 class="text-sm font-medium text-gray-900 mb-2">Color</h3>
-                <div class="flex space-x-2">
-                  <button class="w-8 h-8 rounded-full bg-black"></button>
-                  <button class="w-8 h-8 rounded-full bg-white border-2"></button>
-                  <button class="w-8 h-8 rounded-full bg-gray-500"></button>
-                </div>
-              </div>
+    <main class="container mx-auto px-4 py-8">
+      <h1 class="text-4xl font-bold text-blue-900 mb-8">Souris Ergonomique</h1>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+ 
+        <div class="flex flex-col items-center">
+          <h2 class="text-2xl font-bold text-blue-900 mb-4">Couleur</h2>
+          <div class="flex flex-col-reverse space-y-reverse space-y-2">
+            <button class="w-8 h-8 rounded-full bg-white border-2 border-blue-900"></button>
+            <button class="w-8 h-8 rounded-full bg-gray-200"></button>
+            <button class="w-8 h-8 rounded-full bg-gray-300"></button>
+            <button class="w-8 h-8 rounded-full bg-gray-400"></button>
+            <button class="w-8 h-8 rounded-full bg-gray-500"></button>
+            <button class="w-8 h-8 rounded-full bg-gray-600"></button>
+            <button class="w-8 h-8 rounded-full bg-gray-700"></button>
+          </div>
+        </div>
 
-              <!-- Quantity -->
-              <div class="mb-6">
-                <h3 class="text-sm font-medium text-gray-900 mb-2">Quantity</h3>
-                <div class="flex items-center border rounded-md w-32">
-                  <button class="px-3 py-1 text-gray-600 hover:text-primary">-</button>
-                  <input type="number" value="1" class="w-full text-center border-0 focus:ring-0"/>
-                  <button class="px-3 py-1 text-gray-600 hover:text-primary">+</button>
-                </div>
-              </div>
 
-              <!-- Add to Cart -->
-              <button class="w-full bg-primary text-white py-3 rounded-md hover:bg-blue-700 mb-4">Add to Cart</button>
-              
-              <!-- Features -->
-              <div class="border-t pt-6">
-                <h3 class="text-lg font-medium mb-4">Features</h3>
-                <ul class="space-y-2">
-                  <li class="flex items-center">
-                    <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                    </svg>
-                    Ergonomic Design
-                  </li>
-                  <li class="flex items-center">
-                    <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                    </svg>
-                    Wireless Connectivity
-                  </li>
-                  <li class="flex items-center">
-                    <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                    </svg>
-                    Customizable Buttons
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <div class="space-y-4">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <img src="/images/IMAGE4.png" alt="G305 Mouse" class="w-full">
+          </div>
+          <div class="grid grid-cols-3 gap-4">
+            <img src="/images/IMAGE5.png" alt="Mouse view 1" class="bg-blue-20 p-2 rounded-lg">
+            <img src="/images/IMAGE6.png" alt="Mouse view 2" class="bg-blue-20 p-2 rounded-lg">
+            <img src="/images/IMAGE7.png" alt="Mouse view 3" class="bg-blue-20 p-2 rounded-lg">
+          </div>
+ 
+        </div>
+
+        <div class="space-y-6">
+          <div class="bg-blue-900 text-white p-6 rounded-lg">
+            <h2 class="text-2xl font-bold mb-4">Description</h2>
+            <p class="text-sm">
+              La G305 est une souris de jeu sans fil LIGHTSPEED conçue pour des performances sérieuses avec les dernières innovations technologiques à un prix abordable.
+            </p>
+            <p class="text-sm mt-2">
+              C'est le jeu sans fil de nouvelle génération, maintenant prêt pour tous les joueurs.
+            </p>
+          </div>
+
+          <div class="bg-blue-100 p-6 rounded-lg">
+            <h2 class="text-xl font-bold mb-4">Disponibilité</h2>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <span>Tunis Ariana</span>
+                <span class="ml-auto">✓</span>
+              </li>
+              <li class="flex items-center">
+                <span>Mourouj</span>
+                <span class="ml-auto">✓</span>
+              </li>
+              <li class="flex items-center">
+                <span>Ghazela</span>
+                <span class="ml-auto">✓</span>
+              </li>
+              <li class="flex items-center">
+                <span>Tunis Express</span>
+                <span class="ml-auto">✗</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </main>
 
-    <!-- Footer (same as index.html) -->
-    <footer class="bg-gray-800 text-white py-8">
-      <!-- ... (footer content same as index.html) ... -->
+    <footer class="bg-white py-8 mt-20">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <p>Ariana, 4 Rues des Jasmins</p>
+        <p class="text-gray-600">©ERGOMAN</p>
+        <button class="bg-blue-900 text-white px-4 py-2 rounded-md">
+          Contact Us
+        </button>
+      </div>
     </footer>
-
-    <script type="module" src="/main.js"></script>
   </body>
 </html>
