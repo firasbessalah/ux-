@@ -8,16 +8,19 @@
 </head>
 <body class="bg-gray-100">
     <!-- Navigation -->
-    <nav class="bg-blue-200 py-4 px-8 flex justify-between items-center shadow-md">
-        <div class="flex items-center">
+    <nav class="bg-blue-200 py-4 px-8 flex flex-col md:flex-row justify-between items-center shadow-md">
+        <!-- Logo et nom du site -->
+        <div class="flex items-center mb-4 md:mb-0">
             <img src="/images/logo.png" alt="Logo" class="h-10">
             <span class="text-2xl font-bold text-blue-800 ml-2">ergoman</span>
         </div>
-        <ul class="flex space-x-6 text-blue-900 font-semibold">
+    
+        <!-- Liens de navigation -->
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-blue-900 font-semibold text-center">
             <li><a href="index.html" class="hover:text-blue-600">Accueil</a></li>
             <li><a href="products.html" class="hover:text-blue-600">Produits</a></li>
             <li><a href="#" class="hover:text-blue-600">Promotions</a></li>
-            <li><a href="#" class="hover:text-blue-600">Réclamation</a></li>
+            <li><a href="contact.html" class="hover:text-blue-600">Réclamation</a></li>
             <li><a href="cart.html" class="bg-blue-700 text-white px-4 py-2 rounded-md">Panier (3)</a></li>
         </ul>
     </nav>

@@ -1,111 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping Cart - Ergoman</title>
-  </head>
-  <body class="bg-gray-50">
-    <!-- Navigation (same as index.html) -->
-    <nav class="bg-white shadow-md fixed w-full z-50">
-      <!-- ... (navigation content same as index.html) ... -->
+    <title>Panier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-blue-200 py-4 px-8 flex flex-col md:flex-row justify-between items-center shadow-md">
+        <!-- Logo et nom du site -->
+        <div class="flex items-center mb-4 md:mb-0">
+            <img src="/images/logo.png" alt="Logo" class="h-10">
+            <span class="text-2xl font-bold text-blue-800 ml-2">ergoman</span>
+        </div>
+    
+        <!-- Liens de navigation -->
+        <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-blue-900 font-semibold text-center">
+            <li><a href="index.html" class="hover:text-blue-600">Accueil</a></li>
+            <li><a href="products.html" class="hover:text-blue-600">Produits</a></li>
+            <li><a href="#" class="hover:text-blue-600">Promotions</a></li>
+            <li><a href="contact.html" class="hover:text-blue-600">Réclamation</a></li>
+            <li><a href="cart.html" class="bg-blue-700 text-white px-4 py-2 rounded-md">Panier (3)</a></li>
+        </ul>
     </nav>
 
-    <main class="pt-24">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold mb-8">Shopping Cart</h1>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Cart Items -->
-          <div class="md:col-span-2">
-            <div class="bg-white rounded-lg shadow-md p-6 mb-4">
-              <!-- Cart Item 1 -->
-              <div class="flex items-center border-b py-4">
-                <img src="/vite.svg" alt="Product" class="w-24 h-24 object-cover rounded-lg"/>
-                <div class="flex-1 ml-4">
-                  <h3 class="text-lg font-semibold">Ergonomic Mouse Pro</h3>
-                  <p class="text-gray-600">Black</p>
-                  <div class="flex items-center mt-2">
-                    <button class="text-gray-500 hover:text-primary">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="flex items-center">
-                  <div class="flex items-center border rounded-md">
-                    <button class="px-3 py-1 text-gray-600 hover:text-primary">-</button>
-                    <input type="number" value="1" class="w-16 text-center border-0 focus:ring-0"/>
-                    <button class="px-3 py-1 text-gray-600 hover:text-primary">+</button>
-                  </div>
-                  <span class="ml-4 text-lg font-semibold">$79.99</span>
-                </div>
-              </div>
-
-              <!-- Cart Item 2 -->
-              <div class="flex items-center py-4">
-                <img src="/vite.svg" alt="Product" class="w-24 h-24 object-cover rounded-lg"/>
-                <div class="flex-1 ml-4">
-                  <h3 class="text-lg font-semibold">Ergonomic Keyboard</h3>
-                  <p class="text-gray-600">White</p>
-                  <div class="flex items-center mt-2">
-                    <button class="text-gray-500 hover:text-primary">
-                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="flex items-center">
-                  <div class="flex items-center border rounded-md">
-                    <button class="px-3 py-1 text-gray-600 hover:text-primary">-</button>
-                    <input type="number" value="1" class="w-16 text-center border-0 focus:ring-0"/>
-                    <button class="px-3 py-1 text-gray-600 hover:text-primary">+</button>
-                  </div>
-                  <span class="ml-4 text-lg font-semibold">$129.99</span>
-                </div>
-              </div>
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+            <h1 class="text-3xl font-bold text-blue-900 mb-4 md:mb-0">Panier</h1>
+            <div class="space-x-4">
+                <button class="bg-blue-900 text-white px-6 py-2 rounded"><a href="comparaison.html"> Comparaison</a></button>
+                <button class="bg-blue-900 text-white px-6 py-2 rounded"><a href="produitspecifique.html"> Produit Spécifique</a></button>
             </div>
-          </div>
-
-          <!-- Order Summary -->
-          <div class="md:col-span-1">
-            <div class="bg-white rounded-lg shadow-md p-6">
-              <h2 class="text-lg font-semibold mb-4">Order Summary</h2>
-              <div class="space-y-3">
-                <div class="flex justify-between">
-                  <span class="text-gray-600">Subtotal</span>
-                  <span>$209.98</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="text-gray-600">Shipping</span>
-                  <span>Free</span>
-                </div>
-                <div class="flex justify-between">
-                  <span class="text-gray-600">Tax</span>
-                  <span>$16.80</span>
-                </div>
-                <div class="border-t pt-3">
-                  <div class="flex justify-between font-semibold">
-                    <span>Total</span>
-                    <span>$226.78</span>
-                  </div>
-                </div>
-              </div>
-              <button class="w-full bg-primary text-white py-3 rounded-md hover:bg-blue-700 mt-6">Proceed to Checkout</button>
-            </div>
-          </div>
         </div>
-      </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Cart Items -->
+            <div class="md:col-span-2 space-y-4">
+                <!-- Mouse -->
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <img src="/images/mouse.png" alt="Souris" class="w-24 h-24 object-cover mb-4 md:mb-0">
+                        <div class="md:ml-6 flex-grow">
+                            <h3 class="text-lg font-semibold">Souris Ergonomique</h3>
+                            <p class="text-gray-600">45 Dnt</p>
+                            <div class="flex items-center mt-2">
+                                <input type="number" value="2" min="1" class="w-16 p-1 border rounded text-center">
+                                <button class="ml-2 text-gray-500">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-lg font-semibold mt-4 md:mt-0">90 Dnt</p>
+                    </div>
+                </div>
+
+                <!-- Keyboard -->
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <img src="/images/clavier.png" alt="Clavier" class="w-24 h-24 object-cover mb-4 md:mb-0">
+                        <div class="md:ml-6 flex-grow">
+                            <h3 class="text-lg font-semibold">Clavier Intelligent</h3>
+                            <p class="text-gray-600">90 Dnt</p>
+                            <div class="flex items-center mt-2">
+                                <input type="number" value="1" min="1" class="w-16 p-1 border rounded text-center">
+                                <button class="ml-2 text-gray-500">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-lg font-semibold mt-4 md:mt-0">90 Dnt</p>
+                    </div>
+                </div>
+
+                <!-- Chair -->
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <img src="/images/chaise.png" alt="Chaise" class="w-24 h-24 object-cover mb-4 md:mb-0">
+                        <div class="md:ml-6 flex-grow">
+                            <h3 class="text-lg font-semibold">Chaise de bureau ergonomique</h3>
+                            <p class="text-gray-600">400 Dnt</p>
+                            <div class="flex items-center mt-2">
+                                <input type="number" value="1" min="1" class="w-16 p-1 border rounded text-center">
+                                <button class="ml-2 text-gray-500">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="text-lg font-semibold mt-4 md:mt-0">400 Dnt</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="bg-blue-50 p-6 rounded-lg h-fit">
+                <h2 class="text-xl font-semibold mb-6">Total Commandes</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between">
+                        <span>Subtotal</span>
+                        <span>580.000</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Shipping</span>
+                        <span>20.000</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span>Tax</span>
+                        <span>5.800</span>
+                    </div>
+                    <div class="pt-4 border-t">
+                        <div class="flex justify-between font-semibold">
+                            <span>Total</span>
+                            <span>605.800</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="livraison.html" class="flex items-center justify-between mt-6 bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700">
+                    <span>Confirmer Paiment</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
     </main>
 
-    <!-- Footer (same as index.html) -->
-    <footer class="bg-gray-800 text-white py-8">
-      <!-- ... (footer content same as index.html) ... -->
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-4 border-t">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <p class="mb-2 md:mb-0">Ariana, 4 Rues des Jasmins</p>
+            <p class="mb-2 md:mb-0">©ERGOMAN</p>
+            <button class="bg-blue-900 text-white px-4 py-2 rounded"><a href="contact.html"> Contact Us</a></button>
+        </div>
     </footer>
-
-    <script type="module" src="/main.js"></script>
-  </body>
+</body>
 </html>

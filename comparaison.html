@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Comparison</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-white">
+  <!-- Navigation -->
+  <nav class="bg-blue-200 py-4 px-8 flex flex-col md:flex-row justify-between items-center shadow-md">
+    <!-- Logo et nom du site -->
+    <div class="flex items-center mb-4 md:mb-0">
+        <img src="/images/logo.png" alt="Logo" class="h-10">
+        <span class="text-2xl font-bold text-blue-800 ml-2">ergoman</span>
+    </div>
+
+    <!-- Liens de navigation -->
+    <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-blue-900 font-semibold text-center">
+        <li><a href="index.html" class="hover:text-blue-600">Accueil</a></li>
+        <li><a href="products.html" class="hover:text-blue-600">Produits</a></li>
+        <li><a href="#" class="hover:text-blue-600">Promotions</a></li>
+        <li><a href="contact.html" class="hover:text-blue-600">Réclamation</a></li>
+        <li><a href="cart.html" class="bg-blue-700 text-white px-4 py-2 rounded-md">Panier (3)</a></li>
+    </ul>
+</nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 sm:px-8 lg:px-16 py-4 sm:py-6 lg:py-8">
+    <div class="flex flex-col sm:flex-row justify-between items-center mb-6 sm:mb-8 space-y-4 sm:space-y-0">
+      <h1 class="text-2xl sm:text-3xl font-bold text-[#03387F]">Comparaison Produit</h1>
+      <button class="bg-[#03387F] text-white w-full sm:w-[126px] h-[48px] rounded hover:bg-[#02295F] transition-colors"><a href="contact.html">
+        Contact Us</a>
+      </button>
+    </div>
+
+    <!-- Product Comparison Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      <!-- Product 1 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow">
+        <div class="p-4">
+          <img 
+            src="images/IMAGE4.png"
+            alt="White Mouse"
+            class="w-full h-48 sm:h-64 object-contain"
+          />
+          <div class="bg-[#03387F] p-2 mt-4">
+            <div class="flex justify-between">
+              <img src="images/IMAGE7.png" alt="Mouse view 1" class="w-12 sm:w-16 h-12 sm:h-16 object-cover" />
+              <img src="images/IMAGE6.png" alt="Mouse view 2" class="w-12 sm:w-16 h-12 sm:h-16 object-cover" />
+              <img src="images/IMAGE5.png" alt="Mouse view 3" class="w-12 sm:w-16 h-12 sm:h-16 object-cover" />
+            </div>
+            <img src="images/arrow_right.png" alt="Arrow Right" class="w-12 sm:w-16 h-8 sm:h-11 mt-2 ml-auto" />
+          </div>
+        </div>
+        <div class="space-y-2 p-4">
+          <button class="w-full h-[48px] bg-[#03387F] text-white py-1 rounded hover:bg-[#02295F] transition-colors">Plus details</button>
+          <button class="w-full h-[48px] bg-[#03387F] text-white py-1 rounded hover:bg-[#02295F] transition-colors">Ajouter Panier</button>
+        </div>
+      </div>
+
+      <!-- Characteristics -->
+      <div class="bg-[#B9D2EB] rounded-lg p-6 sm:p-8 lg:p-10 order-first md:order-none">
+        <h2 class="text-xl font-bold text-[#000000] mb-6 text-center">Caractéristiques</h2>
+        <div class="space-y-4">
+          <div class="flex justify-between items-center text-sm sm:text-base">
+            <span class="text-gray-600">XXX</span>
+            <span class="font-medium">Batterie</span>
+            <span class="text-gray-600">XXX</span>
+          </div>
+          <div class="flex justify-between items-center text-sm sm:text-base">
+            <span class="text-gray-600">XXX</span>
+            <span class="font-medium">Garantie</span>
+            <span class="text-gray-600">XXX</span>
+          </div>
+          <div class="flex justify-between items-center text-sm sm:text-base">
+            <span class="text-gray-600">XXX</span>
+            <span class="font-medium">Couleurs</span>
+            <span class="text-gray-600">XXX</span>
+          </div>
+          <div class="flex justify-between items-center text-sm sm:text-base">
+            <span class="text-gray-600">XXX</span>
+            <span class="font-medium">Energie</span>
+            <span class="text-gray-600">XXX</span>
+          </div>
+          <div class="flex justify-between items-center text-sm sm:text-base">
+            <span class="text-gray-600">XXX</span>
+            <span class="font-medium">Durée</span>
+            <span class="text-gray-600">XXX</span>
+          </div>
+        </div>
+        <div class="flex justify-center mt-6">
+          <button class="w-full sm:w-[271px] h-[48px] bg-[#03387F] text-white py-1.5 rounded hover:bg-[#02295F] transition-colors">
+            Valider La Comparaison
+          </button>
+        </div>
+        <div class="mt-6">
+          <div class="flex justify-center mt-6">
+            <p class="w-full sm:w-[271px] h-[48px] text-center mb-4 bg-[#AF0003] text-white py-1.5 rounded">Pourcentage d'achat</p>
+          </div>
+          <div class="flex justify-between px-4 sm:px-0">
+            <div class="text-center w-24">
+              <div class="border-2 border-[#000000] rounded px-4 py-1.5 bg-white">
+                78%
+              </div>
+            </div>
+            <div class="text-center w-24">
+              <div class="border-2 border-[#000000] rounded px-4 py-1.5 bg-white">
+                22%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-white rounded-lg overflow-hidden shadow">
+        <div class="p-4">
+          <img 
+            src="images/IMAGE1.png"
+            alt="Black Mouse"
+            class="w-full h-48 sm:h-64 object-contain"
+          />
+          <div class="bg-[#03387F] p-2 mt-4">
+            <div class="flex justify-between">
+              <img src="images/IMAGE3.png" alt="Mouse view 1" class="w-12 sm:w-16 h-12 sm:h-16 object-cover" />
+              <img src="images/IMAGE2.png" alt="Mouse view 2" class="w-12 sm:w-16 h-12 sm:h-16 object-cover" />
+              <img src="images/IMAGE3.png" alt="Mouse view 3" class="w-12 sm:w-16 h-12 sm:h-16 object-cover" />
+            </div>
+            <img src="images/arrow_right.png" alt="Arrow Right" class="w-12 sm:w-16 h-8 sm:h-11 mt-2 ml-auto" />
+          </div>
+        </div>
+        <div class="space-y-2 p-4">
+          <button class="w-full h-[48px] bg-[#03387F] text-white py-1 rounded hover:bg-[#02295F] transition-colors">Plus details</button>
+          <button class="w-full h-[48px] bg-[#03387F] text-white py-1 rounded hover:bg-[#02295F] transition-colors">Ajouter Panier</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Mobile menu toggle functionality
+    const menuButton = document.querySelector('button.lg\\:hidden');
+    const mobileMenu = document.querySelector('.lg\\:hidden.absolute');
+    
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
